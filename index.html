@@ -10,60 +10,68 @@
     <title>Balle Bot | Landing Page</title>
     <link rel="stylesheet" href="assets/fontello/css/fontello.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/mobile-style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="header__logo">
-            <img src="assets/images/logo.png" alt="Balle Logo">
-        </h1>
+    <header class="header">
+        <div class="header__container">
 
-        <button class="header__lateral-menu-btn">
-            <i class="icon-menu"></i>
-        </button>
-
-        <nav class="header__navigation">
-            <ul class="header__navigation-list">
-                <li class="header__navigation-item">
-                    <a href="#">Comunidade Ballerini</a>
-                </li>
-                <li class="header__navigation-item">
-                    <a href="#">Tutorial</a>
-                </li>
-                <li class="header__navigation-item">
-                    <a href="#">Open Source</a>
-                </li>
-                <li class="header__navigation-item">
-                    <a href="#">Comandos</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <nav class="header__lateral-navigation">
-            <h1 class="header__logo header__lateral-logo">
+            <!-- DESKTOP HEADER -->
+            <h1 class="header__logo">
                 <img src="assets/images/logo.png" alt="Balle Logo">
             </h1>
 
-            <ul class="header__lateral-navigation-list">
-                <li class="header__lateral-navigation-item">
-                    <a href="#">Comunidade Ballerini</a>
-                </li>
-                <li class="header__lateral-navigation-item">
-                    <a href="#">Tutorial</a>
-                </li>
-                <li class="header__lateral-navigation-item">
-                    <a href="#">Open Source</a>
-                </li>
-                <li class="header__lateral-navigation-item">
-                    <a href="#">Comandos</a>
-                </li>
-            </ul>
-        </nav>
+
+            <div class="header-desktop">
+                <!-- DESKTOP HEADER NAVIGATION -->
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item">
+                            <a href="#">Comunidade Ballerini</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#">Tutorial</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#">Open Source</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#">Comandos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- MOBILE HEADER -->
+            <div class="header-mobile">
+                <button class="header__navigation-btn">
+                    <i class="icon-menu"></i>
+                </button>
+
+                <!-- MOBILE HEADER NAVIGATION -->
+                <nav class="header__navigation-mobile">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item">
+                            <a href="#">Comunidade Ballerini</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#">Tutorial</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#">Open Source</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#">Comandos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section class="balle-information">
+        <section class="content-container">
 
             <article class="introduction">
                 <div class="introduction__content">
@@ -71,13 +79,12 @@
                     <p class="introduction__description">Deixa a sua comunidade segura de um jeito fácil.</p>
                     <a href="#" class="introduction__action-btn">Me adicione!</a>
                 </div>
-                <img class="introduction__balle-avatar" src="assets/images/balle-avatar.png" alt="Balle Picture">
+                <div class="introduction__image">
+                    <img class="introduction__balle-avatar" src="assets/images/balle-avatar.png" alt="Balle Picture">
+                </div>
             </article>
 
-
-
-            <div class="section-delimiter">
-            </div>
+            <div class="article-delimiter"></div>
 
             <article class="frequently-asked">
                 <h3 class="faq__title">O que ela faz por você?</h3>
@@ -89,13 +96,15 @@
             </article>
         </section>
     </main>
-    <footer>
-        <h3 class="footer__logo">
-            <img src="assets/images/footer-logo.svg" alt="Footer Logo">
-        </h3>
+    <footer class="footer">
+        <div class="footer_container">
+            <h4 class="footer__logo">
+                <img src="assets/images/footer-logo.svg" alt="Footer Logo">
+            </h4>
+        </div>
     </footer>
 
-    <script src="assets/js/header.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
